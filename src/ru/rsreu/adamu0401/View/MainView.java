@@ -11,7 +11,7 @@ public class MainView implements Runnable{
 	}
 	public void showView() {
 		JFrame jframe = new JFrame();
-	    jframe.setBounds(10,10,1000,600);
+	    jframe.setBounds(10,10,1200,600);
 	    jframe.setTitle("LUDO");
 	    jframe.setResizable(false);
 	    jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
