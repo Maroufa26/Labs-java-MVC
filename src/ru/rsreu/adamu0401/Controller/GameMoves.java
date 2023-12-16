@@ -55,9 +55,7 @@ public class GameMoves extends JPanel implements KeyListener, ActionListener,Mou
 		// TODO Auto-generated method stub
 		if (e.getKeyCode() == KeyEvent.VK_ENTER&&flag==0) {
 			roll=0;
-			System.out.println(current_player);
 			dice=1 + (int)(Math.random() * 6);
-			
 			repaint();
 			for(int i=0;i<4;i++) {
     			if(p.pl[current_player].pa[i].current!=-1&&p.pl[current_player].pa[i].current!=56&&(p.pl[current_player].pa[i].current+dice)<=56) {
@@ -77,7 +75,7 @@ public class GameMoves extends JPanel implements KeyListener, ActionListener,Mou
 	}
 	
 	public void mouseClicked(MouseEvent e) {
-		if(flag==4) {
+		if(flag==1) {
 			int x=e.getX();
 			int y=e.getY();
 			x=x-80;
